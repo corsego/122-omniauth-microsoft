@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: redirect('/static/landing_page')
   get 'static/landing_page'
   get 'static/dashboard'
